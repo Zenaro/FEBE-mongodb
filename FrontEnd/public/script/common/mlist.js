@@ -80,9 +80,15 @@ define(function(require, exports, module) {
 				},
 				dblclick: function() {
 					$.get(URLPrefix + '/Music/getItem?id=' + $(this).attr('data-id'), function(res) {
+<<<<<<< HEAD
 						var json = res.result,
 							M = require('./music');
 						M.init(json._id);
+=======
+						var json = res.result[0],
+							M = require('./music');
+						M.init(json.music_id);
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 					});
 				}
 

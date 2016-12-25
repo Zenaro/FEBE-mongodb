@@ -86,7 +86,11 @@ define(function(require, exports, module) {
 						} else {
 							var json = res.result;
 							$.each(json, function(index, value) {
+<<<<<<< HEAD
 								html += '<li data-id="' + value._id + '"><a href="javascript:;"><div class="col result-master">' + value.singer + '</div><div class="col col-str">--</div><div class="col result-name">' + value.name + '</div></a></li>'
+=======
+								html += '<li data-id="' + value.music_id + '"><a href="javascript:;"><div class="col result-master">' + value.singer_name + '</div><div class="col col-str">--</div><div class="col result-name">' + value.name + '</div></a></li>'
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 							});
 						}
 						$(self.result).empty();

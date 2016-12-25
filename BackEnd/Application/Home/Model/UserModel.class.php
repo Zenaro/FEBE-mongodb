@@ -1,8 +1,31 @@
 <?php
 namespace Home\Model;
+<<<<<<< HEAD
 use Think\Model\MongoModel;
 
 class UserModel extends MongoModel {
+=======
+use Think\Model;
+
+class UserModel extends Model {
+	protected $MusicClass;
+	protected $FriendsInfo;
+	public function __construct() {
+		$musicClass = new Model();
+		$friendsInfo = new Model();
+
+		$this->MusicClass = $musicClass->table(array(
+			C('DB_PREFIX').'music'=>'music',
+			C('DB_PREFIX').'musicrclass'=>'mrc',
+			C('DB_PREFIX').'class'=>'class'
+		));
+
+		$this->FriendsInfo = $friendsInfo->table(array(
+			C('DB_PREFIX').'friends'=>'friends',
+			C('DB_PREFIX').'info'=>'info'
+		));
+	}
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 
 	/*
 	* 用户登录验证
@@ -10,7 +33,12 @@ class UserModel extends MongoModel {
 	* $email:邮箱账号;	$pwd:密码
 	*/
 	public function checklogin($email, $pwd) {
+<<<<<<< HEAD
 		$data = new MongoModel('User');
+=======
+
+		$data = M('User');
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 		$map['email'] = $email;
 		$map['pwd'] = md5($pwd);
 		$result = $data->where($map)->select();
@@ -19,6 +47,10 @@ class UserModel extends MongoModel {
 		} else {
 			return ['msg'=>'false', 'status'=>-1, 'result'=>[]];
 		}
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 	}
 
 	/*
@@ -27,6 +59,7 @@ class UserModel extends MongoModel {
 	* $name:昵称;	$email:邮箱账号;	$pwd:密码
 	*/
 	public function reg($name, $email, $pwd) {
+<<<<<<< HEAD
 		$user = new MongoModel('User');
 		$map['email'] = $email;
 		$query = $user->where($map)->select();
@@ -46,6 +79,29 @@ class UserModel extends MongoModel {
 
 			} else {
 				return ['msg'=>'网络错误，请稍后重试', 'result'=>-1];// 新增失败
+=======
+		$user = M('User');
+		$info = M('Info');
+		$mapUser['email'] = $email;
+		$query = $user->where($mapUser)->select();
+
+		if (count($query) > 0) {
+			return ['msg'=>'账号已存在，请输入其他账号', 'result'=>-1];
+		} else {
+			$mapUser['pwd'] = $pwd;
+			$mapUser['regDate'] = date("Y-m-d", time());
+			$mapUser['root'] = 0;
+			$result = $user->add($mapUser);
+			if ($result > 0) {
+				$mapInfo['user_id'] = $result;
+				$mapInfo['name'] = $name;
+				$mapInfo['image'] = '../public/image/poster/profile.jpg';
+				$update = $info->add($mapInfo);
+				return ['msg'=>'注册成功', 'result'=>$result];
+			} else {
+				// 新增失败
+				return ['msg'=>'网络错误，请稍后重试', 'result'=>-1];
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 			}
 		}
 	}

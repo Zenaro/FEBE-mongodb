@@ -37,7 +37,11 @@ define(function(require, exports, module) {
             $(self.audio).attr('data-id', dataID);
 
             $.get(URLPrefix + '/Music/getItem?id=' + dataID, function(res) {
+<<<<<<< HEAD
                 json = res.result;
+=======
+                json = res.result[0];
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
                 $('.play-ing .ptitle a.title').html(json.name);
                 $('.play-ing .ptitle a.singer').html(json.singer_name);
                 self.audio.src = json.src;
@@ -63,20 +67,32 @@ define(function(require, exports, module) {
                     $('.play-ctrl a.icon-list').text(num);
                 });
 
+<<<<<<< HEAD
             } else {
                 $.get(URLPrefix + '/Music/getItem?id=' + add, function(res) {
                     info = res.result;
+=======
+            } else if (Number(add) == add) { // number类型
+                $.get(URLPrefix + '/Music/getItem?id=' + add, function(res) {
+                    info = res.result[0];
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
                     html += ceilPlus(info);
                     objUl.append(html).siblings('.empty').hide();
                     num = $(objUl).children('li').length;
                     $('.play-ctrl a.icon-list').text(num);
                 });
+<<<<<<< HEAD
+=======
+            } else {
+                console.log('参数不匹配');
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
             }
 
             // ceilPlus 方法
             function ceilPlus(value) {
                 var existID = 0,
                     dom = '',
+<<<<<<< HEAD
                     objLI = $('ul.mtab').children('li');
 
                 for (var i = $(objLI).length - 1; i >= -1; i--) {
@@ -86,6 +102,17 @@ define(function(require, exports, module) {
 
                     } else if (i <= 0) {
                         dom = '<li data-id="' + value._id + '">' +
+=======
+                    objLI = $('.play-form ul.mtab').children('li');
+
+                for (var i = $(objLI).length - 1; i >= -1; i--) {
+                    existID = $(objLI).eq(i).attr('data-id');
+                    if (value.music_id == existID) { // 判断是否重复添加
+                        break;
+
+                    } else if (i <= 0) {
+                        dom = '<li data-id="' + value.music_id + '">' +
+>>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
                             '<div class="abs-stus"><span class="icn-stus"></span></div>' +
                             '<div class="col col-1">' + value.name + '</div>' +
                             '<div class="col col-2">' +
