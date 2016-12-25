@@ -1,0 +1,307 @@
+[ 2016-12-21T23:17:25+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0004s ]
+SQL: music.app_music.find({}) [ RunTime:0.0003s ]
+
+[ 2016-12-21T23:20:02+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+SQL: music.app_music.find({}) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:20:24+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+SQL: music.app_music.find({}) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:24:35+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+ERR: Invalid object ID
+
+[ 2016-12-21T23:24:49+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+SQL: music.app_music.insert({"name":"V.A.-\u30ad\u30df\u3092\u601d\u3046\u30e1\u30ed\u30c7\u30a3\u30fc","singer":"V.A.","src":"http:\/\/7xstax.com1.z0.glb.clouddn.com\/VA-missing.mp3","lyric":"\u7eaf\u97f3\u4e50\u65e0\u6b4c\u8bcd","listeners":2500}) [ RunTime:0.0250s ]
+
+[ 2016-12-21T23:41:46+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+SQL: music.app_music.find({}) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:49:21+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+SQL: music.app_music.insert({"name":"you--Graveyard-you","singer":"V.A.","src":"http:\/\/7xstax.com1.z0.glb.clouddn.com\/M.Graveyard-you.mp3","lyric":"\u7eaf\u97f3\u4e50\u65e0\u6b4c\u8bcd","listeners":3200}) [ RunTime:0.0007s ]
+
+[ 2016-12-21T23:49:30+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+SQL: music.app_music.find({}) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:51:07+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
+[ 2016-12-21T23:51:09+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
+[ 2016-12-21T23:51:10+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Index/getNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_news) [ RunTime:0.0000s ]
+SQL: music.app_news.find({}).limit(7) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:51:11+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
+[ 2016-12-21T23:53:11+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:53:30+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:54:10+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+SQL: music.app_music.update({"$where":{"code":"1","scope":[]}},{"$set":{"class_id":1}}) [ RunTime:0.3322s ]
+
+[ 2016-12-21T23:54:26+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_music) [ RunTime:0.0000s ]
+SQL: music.app_music.find({}) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:59:09+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Index/getNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_news) [ RunTime:0.0000s ]
+SQL: music.app_news.find({}).limit(7) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:59:10+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
+[ 2016-12-21T23:59:11+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
+[ 2016-12-21T23:59:12+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
+[ 2016-12-21T23:59:41+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Index/getNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: music.getCollection(app_news) [ RunTime:0.0000s ]
+SQL: music.app_news.find({}).limit(7) [ RunTime:0.0000s ]
+
+[ 2016-12-21T23:59:41+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
+[ 2016-12-21T23:59:42+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
+[ 2016-12-21T23:59:42+08:00 ] ::1 /NewWorld/FEBE-mongodb/BackEnd/index.php/Home/Music/getList?data=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+NOTIC: [8] Undefined variable: GET F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\Application\Home\Controller\MusicController.class.php 第 22 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) F:\xampp\htdocs\NewWorld\FEBE-mongodb\BackEnd\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+
