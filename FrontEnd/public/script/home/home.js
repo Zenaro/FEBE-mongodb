@@ -5,7 +5,7 @@ define(function(require, exports, module) {
 
 	var URLPrefix = '../../BackEnd/index.php/Home';
 
-	function Index() {
+	function Home() {
 		this.btnDwn = '.btns .btn-down'; //宣传栏左侧的下载按钮
 		this.btnSm = '.btns .sm'; //宣传栏左侧的其他按钮
 		this.slides = '.slides'; //滚动框
@@ -26,15 +26,15 @@ define(function(require, exports, module) {
 		this.rankLIStore = '.rank dl dd .dd-oper a.icon-store'; //排行榜li的收藏按钮
 	}
 
-	module.exports = Index;
+	module.exports = Home;
 
-	Index.prototype.render = function() {
+	Home.prototype.render = function() {
 		this._init();
 		this._load();
 		this._bind();
 	};
 
-	Index.prototype._init = function() {
+	Home.prototype._init = function() {
 
 		var self = this;
 		this.SIZE = $(this.sliUL).find('img').width();
@@ -45,7 +45,7 @@ define(function(require, exports, module) {
 		this._fnTimer(0);
 	};
 
-	Index.prototype._fnTimer = function(i) {
+	Home.prototype._fnTimer = function(i) {
 
 		var index = i || 0;
 		var self = this;
@@ -59,7 +59,6 @@ define(function(require, exports, module) {
 		this._timer = setInterval(ahead, 6000);
 
 		function ahead() {
-
 			$(self.sliUL).animate({
 				left: -index * SIZE + 'px'
 			}, 500);
@@ -70,15 +69,14 @@ define(function(require, exports, module) {
 		}
 	};
 
-	Index.prototype._load = function() {
+	Home.prototype._load = function() {
 		var self = this;
 		$.get(URLPrefix + '/Index/getNews', function(res) {
-			var json = res;
 			var html = '';
-			$.each(json, function(index, value) {
+			$.each(res, function(index, value) {
 				html += '<li>' +
 					'<a href="javascript:;">' + value.title + '</a>' +
-					'<span>' + value.pubdate.substring(5, 10) + '</span>' +
+					'<span>' + value.pubDate.substring(5, 10) + '</span>' +
 					'</li>';
 			});
 			$('ul.aside-list').append(html).find('a').first().attr('class', 'active');
@@ -97,7 +95,7 @@ define(function(require, exports, module) {
 				var html = '';
 				var key = 1;
 				$.each(json, function(index, value) {
-					html += '<dd data-id="' + index + '">' +
+					html += '<dd data-id="' + value._id + '">' +
 						'<span>' + (key++) + '</span>' +
 						'<a href="javascript:;">' + value.name + '</a>' +
 						'<div class="dd-oper">' +
@@ -114,7 +112,7 @@ define(function(require, exports, module) {
 		}
 	};
 
-	Index.prototype._bind = function() {
+	Home.prototype._bind = function() {
 		var self = this,
 			Music = require('../common/music'),
 			MList = require('../common/mlist');
@@ -183,7 +181,8 @@ define(function(require, exports, module) {
 						type: t
 					},
 					'success': function(res) {
-						alert(res);
+						// alert(res);
+						console.log(res);
 					}
 				});
 			} else {

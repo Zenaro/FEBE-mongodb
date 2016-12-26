@@ -43,7 +43,7 @@ define(function(require, exports, module) {
 					},
 					success: function(res) {
 						if (res.status > 0) {
-							cookie('unique', res.result[0].id);
+							cookie('unique', res.result._id);
 							window.location.href = './frame.html';
 
 						} else {

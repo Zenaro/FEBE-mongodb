@@ -31,17 +31,25 @@
 .wrap form .tips,
 .wrap form .operate,
 .wrap form .submit {
-
-	width: 220px;
+	width: 280px;
+	line-height: 30px;
+	overflow: hidden;
 	margin: 10px auto;	
 }
 
 .wrap form .text-top{
 	margin-top: 30px;
 }
+.wrap form .text label {
+	width: 20%;
+	display: block;
+	float: left;
+}
 .wrap form .text input{
-	width: 100%;
+	width: 75%;
 	height: 28px;
+	display: block;
+	float: left;
 	text-indent: 5px;
 	border: solid 1px #cdcdcd;
 }

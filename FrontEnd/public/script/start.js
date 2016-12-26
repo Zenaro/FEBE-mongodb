@@ -11,8 +11,8 @@ seajs.config({
 seajs.use('../public/script/common/main'); //引入main.js
 
 angular.module('routingApp', ['ngRoute'])
-    .controller('indexCtrl', function($scope) {
-        seajs.use('../public/script/index/main');
+    .controller('home', function($scope) {
+        seajs.use('../public/script/home/main');
     })
     .controller('my', function($scope) {
         seajs.use('../public/script/my/main');
@@ -31,8 +31,8 @@ angular.module('routingApp', ['ngRoute'])
 
         $routeProvider
             .when('/home', {
-                templateUrl: 'index.html',
-                controller: 'indexCtrl'
+                templateUrl: 'home.html',
+                controller: 'home'
             })
             .when('/my', {
                 templateUrl: 'my.html',

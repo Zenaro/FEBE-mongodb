@@ -20,11 +20,7 @@ define(function(require, exports, module) {
                     data_id = url.substring(subStr1 + 1, url.length);
                 this._mid = data_id;
                 $.get(URLPrefix + '/Music/getItem?id=' + data_id, function(res) { //get歌曲信息
-<<<<<<< HEAD
                     var json = res.result;
-=======
-                    var json = res.result[0];
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
                     $('.main .main-title h3').html(json.name);
                     $('.main .main-title span').html(json.singer_name);
                     if ($('audio')[0].src == '') {
@@ -38,11 +34,7 @@ define(function(require, exports, module) {
                     mid: data_id
                 }, function(res) { //get歌词
                     var html = '',
-<<<<<<< HEAD
                         lyric = res.result.lyric;
-=======
-                        lyric = res.result[0].lyric;
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
                     if (lyric.length > 6) {
                         self._lrc = self._util.parseLrc(lyric);
                         for (var i = 0, length = self._lrc.length; i < length; i++) {
@@ -52,11 +44,7 @@ define(function(require, exports, module) {
                         self._lrc = lyric;
                         html = '<p>' + self._lrc + '</p>';
                     }
-<<<<<<< HEAD
                     $('.content').empty().append(html);
-=======
-                    $('.content').append(html);
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
                 });
 
                 $.get(URLPrefix + '/Music/getComment', {
@@ -77,12 +65,8 @@ define(function(require, exports, module) {
                         $('.comment').append(html);
 
                     } else {
-                        html = '<p>暂无评论</p>'
-<<<<<<< HEAD
-                        $('.comment').empty().append(html);
-=======
+                        html = '<p>暂无评论</p>';
                         $('.comment').append(html);
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
                     }
 
                 })
@@ -93,7 +77,6 @@ define(function(require, exports, module) {
                 lrc_i = 0; // 第i行歌词
 
             $('body').on('click', '.main a.toggle', function() {
-
                 if ($('.main .content').hasClass('txtOF')) {
                     $(this).html('收起');
                     $('.main .content').removeClass('txtOF');
@@ -108,11 +91,14 @@ define(function(require, exports, module) {
                 $(this).text('');
 
             }).on('click', 'input[type=submit]', function() {
-
+                if (!cookie('unique') || cookie('unique') != '') {
+                    alert('您尚未登录');
+                    return;
+                }
                 var html = '',
                     user_id = cookie('unique'),
                     txt = $.trim($('textarea').val());
-                $.get(URLPrefix + '/User/setComment', {
+                $.get(URLPrefix + '/Music/setComment', {
                     uid: user_id,
                     mid: self._mid,
                     com: txt

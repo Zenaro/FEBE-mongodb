@@ -1,31 +1,8 @@
 <?php
 namespace Home\Model;
-<<<<<<< HEAD
 use Think\Model\MongoModel;
 
 class UserModel extends MongoModel {
-=======
-use Think\Model;
-
-class UserModel extends Model {
-	protected $MusicClass;
-	protected $FriendsInfo;
-	public function __construct() {
-		$musicClass = new Model();
-		$friendsInfo = new Model();
-
-		$this->MusicClass = $musicClass->table(array(
-			C('DB_PREFIX').'music'=>'music',
-			C('DB_PREFIX').'musicrclass'=>'mrc',
-			C('DB_PREFIX').'class'=>'class'
-		));
-
-		$this->FriendsInfo = $friendsInfo->table(array(
-			C('DB_PREFIX').'friends'=>'friends',
-			C('DB_PREFIX').'info'=>'info'
-		));
-	}
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 
 	/*
 	* 用户登录验证
@@ -33,24 +10,15 @@ class UserModel extends Model {
 	* $email:邮箱账号;	$pwd:密码
 	*/
 	public function checklogin($email, $pwd) {
-<<<<<<< HEAD
 		$data = new MongoModel('User');
-=======
-
-		$data = M('User');
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 		$map['email'] = $email;
 		$map['pwd'] = md5($pwd);
-		$result = $data->where($map)->select();
+		$result = $data->where($map)->find();
 		if (count($result) > 0) {
 			return ['msg'=>'succ', 'status'=>1, 'result'=>$result];
 		} else {
 			return ['msg'=>'false', 'status'=>-1, 'result'=>[]];
 		}
-<<<<<<< HEAD
-=======
-		
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
 	}
 
 	/*
@@ -59,13 +27,12 @@ class UserModel extends Model {
 	* $name:昵称;	$email:邮箱账号;	$pwd:密码
 	*/
 	public function reg($name, $email, $pwd) {
-<<<<<<< HEAD
 		$user = new MongoModel('User');
 		$map['email'] = $email;
 		$query = $user->where($map)->select();
 
 		if (count($query) > 0) {
-			return ['msg'=>'账号已存在，请使用其他账号', 'result'=>-1];
+			return ['msg'=>'邮箱已存在，请使用其他账号', 'result'=>-1];
 
 		} else {
 			$map['root'] = 0;
@@ -75,33 +42,10 @@ class UserModel extends Model {
 			$map['image'] = '../public/image/poster/profile.jpg';
 			$result = $user->add($map);
 			if ($result > 0) {
-				return ['msg'=>'注册成功', 'result'=>$result];
+				return ['msg'=>'注册成功', 'result'=>$result, 'status'=>1];
 
 			} else {
-				return ['msg'=>'网络错误，请稍后重试', 'result'=>-1];// 新增失败
-=======
-		$user = M('User');
-		$info = M('Info');
-		$mapUser['email'] = $email;
-		$query = $user->where($mapUser)->select();
-
-		if (count($query) > 0) {
-			return ['msg'=>'账号已存在，请输入其他账号', 'result'=>-1];
-		} else {
-			$mapUser['pwd'] = $pwd;
-			$mapUser['regDate'] = date("Y-m-d", time());
-			$mapUser['root'] = 0;
-			$result = $user->add($mapUser);
-			if ($result > 0) {
-				$mapInfo['user_id'] = $result;
-				$mapInfo['name'] = $name;
-				$mapInfo['image'] = '../public/image/poster/profile.jpg';
-				$update = $info->add($mapInfo);
-				return ['msg'=>'注册成功', 'result'=>$result];
-			} else {
-				// 新增失败
-				return ['msg'=>'网络错误，请稍后重试', 'result'=>-1];
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
+				return ['msg'=>'网络错误，请稍后重试', 'result'=>-1, "status"=>-1];// 新增失败
 			}
 		}
 	}
@@ -112,10 +56,10 @@ class UserModel extends Model {
 	* $uid:用户id
 	*/
 	public function getInfo($uid) {
-		$data = M('Info');
-		$map['user_id'] = $uid;
-		$result = $data->where($map)->select();
-		return ['msg'=>'succ', 'result'=>$result];
+		$data = new MongoModel('User');
+		$map['_id'] = $uid;
+		$result = $data->where($map)->find();
+		return ['msg'=>'succ', 'status'=>1, 'result'=>$result];
 	}
 
 	/*
@@ -124,10 +68,9 @@ class UserModel extends Model {
 	* $uid:用户id
 	*/
 	public function getFriends($uid) {
-		$map['user_id'] = $uid;
-		$result = $this->FriendsInfo
-			->where("friends.user_id=".$uid." and friends.friends_id=info.user_id")
-			->select();
+		$model = new MongoModel();
+		$map['_id'] = $uid;
+		$result = $model->where($map)->select();
 		return ['msg'=>'succ', 'result'=>$result];
 	}
 
@@ -137,8 +80,8 @@ class UserModel extends Model {
 	* $uid:用户id;	$fid:好友id
 	*/
 	public function setFriends($uid, $fid) {
-		$data = M('Friends');
-		$map['user_id'] = $uid;
+		$data = new MongoModel('User');
+		$map['_id'] = $uid;
 		$map['friends_id'] = $fid;
 		$query = $data->where($map)->select();
 		if (count($query) > 0) {
@@ -148,18 +91,6 @@ class UserModel extends Model {
 			$result = $data->add($map);
 			return ['msg'=>'添加成功', 'result'=>$result];
 		}
-	}
-
-	/*
-	* 评论歌曲
-	* @param
-	* $uid:用户id;	
-	*/
-	public function setComment($uid) {
-		// $data = M('Info');
-		// $map['user_id'] = $uid;
-		// $result = $data->where($map)->select();
-		// return ['msg'=>'succ', 'result'=>$result];
 	}
 
 	/*

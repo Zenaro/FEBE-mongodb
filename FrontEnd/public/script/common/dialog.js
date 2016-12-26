@@ -15,7 +15,6 @@ define(function(require, exports, module) {
 		this.slideDwn = '.header .top-tool .top-user ul.slide-down';
 		this.logout = '.header .top-tool .top-user  ul.slide-down a.logout';
 	}
-
 	module.exports = Dialog;
 
 	Dialog.prototype.render = function() {
@@ -31,7 +30,7 @@ define(function(require, exports, module) {
 				id: cookie('unique')
 			}, function(res) {
 				$(self.memb).show();
-				$(self.user).html(res.result[0].name);
+				$(self.user).html(res.result.name);
 			});
 			$(this.login).hide();
 			var a = $('.header ul.nav li a');
@@ -86,11 +85,7 @@ define(function(require, exports, module) {
 						} else {
 							var json = res.result;
 							$.each(json, function(index, value) {
-<<<<<<< HEAD
-								html += '<li data-id="' + value._id + '"><a href="javascript:;"><div class="col result-master">' + value.singer + '</div><div class="col col-str">--</div><div class="col result-name">' + value.name + '</div></a></li>'
-=======
-								html += '<li data-id="' + value.music_id + '"><a href="javascript:;"><div class="col result-master">' + value.singer_name + '</div><div class="col col-str">--</div><div class="col result-name">' + value.name + '</div></a></li>'
->>>>>>> 0f43a8994d64169c1f938495687fc93722f85bcb
+								html += '<li data-id="' + value._id + '"><a href="javascript:;"><div class="col result-master">' + value.singer + '</div><div class="col col-str">--</div><div class="col result-name">' + value.name + '</div></a></li>';
 							});
 						}
 						$(self.result).empty();
@@ -127,6 +122,4 @@ define(function(require, exports, module) {
 		});
 
 	};
-
-
 });

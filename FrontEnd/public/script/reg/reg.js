@@ -27,19 +27,15 @@ define(function(require, exports, module) {
 		var self = this;
 
 		$('.wrap-in').on('focus', this.name, function() {
-
 			$(self.tips).html('');
 
 		}).on('focus', this.email, function() {
-
 			$(self.tips).html('');
 
 		}).on('focus', this.pwd, function() {
-
 			$(self.tips).html('');
 
 		}).on('focus', this.repwd, function() {
-
 			$(self.tips).html('');
 
 		}).on('submit', 'form[name=reg]', function(e) {
@@ -49,8 +45,8 @@ define(function(require, exports, module) {
 			if (!!$.trim($(self.name).val()) &&
 				!!$.trim($(self.name).val()) &&
 				!!$.trim($(self.pwd).val()) &&
-				!!$.trim($(self.repwd).val())) {
-
+				!!$.trim($(self.repwd).val())
+			) {
 				$.ajax({
 					url: URLPrefix + '/User/reg',
 					type: 'POST',
@@ -60,8 +56,8 @@ define(function(require, exports, module) {
 					},
 					success: function(res) {
 						console.log(res);
-						if (res.result > 0) {
-							cookie('unique', res.result);
+						if (res.status > 0) {
+							cookie('unique', res.result.$id);
 							window.location.href = './frame.html';
 
 						} else {

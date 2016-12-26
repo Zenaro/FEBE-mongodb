@@ -10,7 +10,6 @@ define(function(require, exports, module) {
 		this.listBtnAdd = '.main-mlist ul li .col-2 a.icn-add'; //添加按钮
 		this.listBtnDel = '.main-mlist ul li .col-2 a.icn-del'; //删除按钮
 	}
-
 	module.exports = My;
 
 	My.prototype.render = function() {
@@ -19,29 +18,27 @@ define(function(require, exports, module) {
 	}
 
 	My.prototype._init = function() {
-
 		var self = this;
-
 		if (!cookie('unique') || cookie('unique') == '') {
 			history.go(-1);
 
 		} else {
-			$.post(URLPrefix + '/User/getInfo', {
+			$.get(URLPrefix + '/User/getInfo', {
 				id: cookie('unique')
 			}, function(res) {
-				$(self.user).html(res);
+				$(self.user).html(res.result.name);
 			});
-			$.post(URLPrefix + '/User/getMusic', {
+			$.get(URLPrefix + '/User/getMusic', {
 				uid: cookie('unique')
 			}, function(res) {
-				var json = $.parseJSON(res);
+				var json = res.result;
 				var html = '';
 				$.each(json, function(index, value) {
-					html += '<li data-id="' + value.music_id + '">' +
+					html += '<li data-id="' + value._id + '">' +
 						'<a href="javascript:;" class="icon-play"></a>' +
 						'<div class="col col-1">' +
 						'<h4>' + value.name + '</h4>' +
-						'<div class="master"> - ' + value.singer_name + '</div>' +
+						'<div class="master"> - ' + value.singer + '</div>' +
 						'</div>' +
 						'<div class="col col-2">' +
 						'<a href="javascript:;" class="icn-add" title="添加"></a>' +
@@ -51,14 +48,13 @@ define(function(require, exports, module) {
 						'</div>' +
 						'</li>';
 				});
-
 				$(self.mul).append(html);
 			});
 
-			$.get('../../phpCtrl/myFriend.php', {
+			$.get(URLPrefix + '/User/getFriends', {
 				uid: cookie('unique')
 			}, function(res) {
-				var json = $.parseJSON(res);
+				var json = res.result.friends;
 				var html = '';
 				$.each(json, function(index, value) {
 					html += '<li data-id="' + value.friend_id + '">' +

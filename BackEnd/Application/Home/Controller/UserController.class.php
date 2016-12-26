@@ -14,9 +14,6 @@ class UserController extends Controller {
 			$pwd = $_POST['pwd'];
 			$result = $data->checkLogin($email, $pwd);
 			$this->ajaxReturn($result, 'JSON');
-			// // $data.checklogin($map['email'], $map['pwd']);
-			// $result = $data->where($map)->select();
-			// var_dump($result);
 
 		} else {
 			$result = ['status'=>-1, 'msg'=>'参数缺失'];
@@ -26,7 +23,9 @@ class UserController extends Controller {
 
 	// 注册操作
 	public function reg() {
-		if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['pwd'])) {
+		if (
+			isset($_POST['name']) && isset($_POST['email']) && isset($_POST['pwd'])
+		) {
 			$name = $_POST['name'];
 			$email = $_POST['email'];
 			$pwd = md5($_POST['pwd']);
